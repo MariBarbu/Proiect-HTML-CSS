@@ -1,0 +1,90 @@
+
+
+p {
+    text-align: left;
+    font-family: cursive; 
+    font-size: x-large;
+    font-style: italic;
+    color: white;
+}
+h2 {
+    text-align: left;
+    font-family: cursive ;
+    color: white;
+    font-size: xx-large;
+}
+      
+      h3 
+      {color: white;
+
+      }
+      .img+text{
+        display: inline-flex;
+      }
+     
+      
+      #text1{
+        color: black;
+        text-align: center;
+        font-family: cursive ;
+        position: relative;
+         
+      }
+      .header{
+        background-color: darkred;
+      padding: 20px;
+      text-align: center;
+      }
+   #video{
+     float: right;
+     width: 500px;
+     height: 350px ;
+     padding: 0px;
+     margin-right: 100px;
+   }
+   
+img[alt="Car"]{
+  float: right;
+}
+.imgtext{
+  display: flex;
+
+}
+@media screen and (max-width: 950px){
+
+  p,h2{
+    font-size: medium;
+  }
+  img[alt="Car"]{
+    width: 200px;
+    height: 200px;
+  }
+  #video{
+    width: 400px;
+    height: 300px ;
+    margin-right: 0em;
+
+    
+  }
+  .vidimg{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+
+@media screen and (max-width: 650px){
+
+  p,h2{
+    font-size: small;
+  }
+  .imgtext{
+    display: flex;
+    flex-direction: column;
+  }
+  img[alt="Car"]{
+    width: 300px;
+    height: 300px;
+  }
+  
+}
