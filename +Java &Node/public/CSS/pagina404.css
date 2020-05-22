@@ -1,0 +1,11 @@
+body{
+    background-image: url("../imagini/404.png");
+    background-size: auto;
+    background-repeat: repeat;
+}
+
+h1{
+    color:white;
+    size: 20vw;
+    position: absolute;
+}
