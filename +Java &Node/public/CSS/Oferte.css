@@ -1,0 +1,187 @@
+
+    #text1{
+        color: black;
+        text-align: center;
+        font-family: cursive ;
+        position: relative; 
+             
+
+}
+#text2{
+  color: black;
+  text-align: left;
+  font-family: cursive ;
+  position: relative; 
+  font-size: 3em;
+ 
+  
+}   
+
+.header{
+    background-color: rgb(255, 81, 0);
+  padding: 20px;
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > .grid-item {
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  border: 1px solid white;
+
+}
+
+img{
+    height: 350px;
+    width: 350px;
+    border-radius: 50px;
+}
+a,h2{
+    color: darkred;
+}
+a:hover{
+    color:white;
+}
+h1, h3{
+  color:red;
+}
+
+@media screen and (max-width: 950px){
+  .grid-container{
+      grid-template-columns: auto auto;
+  
+
+  }
+}
+
+@media screen and (max-width:600px){
+  .grid-container{
+      grid-template-columns: auto;
+  }
+}
+
+.sectiune-adauga{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  left:20vw;
+  background-color:yellow;
+  width: 50vw;
+  padding: 1%;
+  border: 2px solid black;
+  
+}
+input{
+  margin-top: 10px;
+}
+
+#lista-produse{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.item{
+  border: 5px solid var(--second-blue);
+  padding: 2%;
+  margin: 1px;
+}
+
+#imagine-produs{
+  width: 45vw;;
+}
+
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+#adauga-btn, #Cumpara, #update-btn {
+  background-color: rgb(161, 9, 67);
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#adauga-btn:hover, .button:hover, #Cumpara:hover, #update-btn:hover {
+  background-color: rgb(253, 253, 253);
+  color: rgb(161, 9, 67);
+}
+
+
+  .fa-star, .fa-trash{
+    font-size: 40px;
+    color:white;
+} 
+ .fa-refresh{
+  font-size: 40px;
+    color:white;
+} 
+.fa-star:hover, .fa-trash:hover, .fa-refresh:hover{
+  cursor: pointer;
+  color: darkred;
+
+}
+.favourite{
+  color: yellow;
+}
+.label{
+  color: black;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-form {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-form .label {
+  color:black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+
+}
+
+
+.dropdown:hover .dropdown-form{
+  display: block;
+}
+
+.bara input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}

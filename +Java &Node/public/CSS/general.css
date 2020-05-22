@@ -1,0 +1,104 @@
+body{background-color: black;
+      color: white;}
+
+.button {
+    background-color: rgb(161, 9, 67);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: rgb(253, 253, 253);
+    color: rgb(161, 9, 67);
+  }
+  .bara{
+    background-color: darkred;
+}
+hr{
+  color: white;
+}
+.button1 {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  float: right;
+}
+
+.button1:hover {
+  background-color: black;
+  color: rgb(161, 9, 67);
+}
+
+.registerbtn{
+  background-color: rgb(161, 9, 67);
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.registerbtn:hover {
+  background-color: rgb(253, 253, 253);
+  color: rgb(161, 9, 67);
+}
+
+#btn{
+  color: black;
+}
+
+#link{
+  color: magenta;
+}
+
+@media screen and (max-width: 950px){
+
+  .button, .button1, .registerbtn{
+    font-size: 15px;
+    }
+  #text{
+    font-size: small;
+  }
+  #text1{
+    font-size:medium;
+  }
+}
+
+@media screen and (max-width: 650px){
+
+  .button, .button1, .registerbtn{
+    font-size: 20px;
+    border-radius: 0em;
+  
+  }
+  .bara{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    background-color: black;
+
+  }
+
+}
+
+.header{
+  background-color: darkred;
+padding: 20px;
+text-align: center;
+}

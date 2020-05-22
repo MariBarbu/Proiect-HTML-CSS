@@ -1,0 +1,36 @@
+body { 
+    
+    
+    font-weight: 200;
+    
+
+  }
+  .aaa {padding: 10px ;
+      margin: auto;
+        width: 500px ;
+        border: 1px solid darkred;
+  }
+    
+
+  #h1 {
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+  .header{
+    background-color: darkred;
+  padding: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width:650px){
+
+  .aaa{
+    width: 100%;
+  }
+}
+
+  

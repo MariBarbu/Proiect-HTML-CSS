@@ -1,0 +1,22 @@
+.header{
+    background-color: darkred;
+  padding: 20px;
+  text-align: center;
+}
+
+p{
+    font-size: large;
+}
+@media screen and (max-width:950px){
+
+  p{
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width:650px){
+
+  p{
+    font-size: small;
+  }
+}
