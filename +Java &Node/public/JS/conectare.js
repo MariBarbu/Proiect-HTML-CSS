@@ -11,6 +11,7 @@ LogBtn.addEventListener("click", async function (event) {
         email,
         parola
     };
+    localStorage.setItem("User curent", email);
     const array = await findUser('http://localhost:5000/find-user');
     //console.log("UsersArray", array)
         let ok=0;
@@ -30,17 +31,17 @@ LogBtn.addEventListener("click", async function (event) {
                     LogArray.push(data);
                     localStorage.removeItem('log in');
                     localStorage.setItem('log in', JSON.stringify(LogArray));
-                    //location="file:///E:/Tehnici%20Web/Magazin%20Online/views/Acasa.html";
+                    window.location.replace('../views/Acasa.html');
                 }
         })
-        if(ok==0){
-                Swal.fire({
-                    title: 'Parola sau email invalid',
-                    text: 'Daca nu aveti un cont, inregistrati-va!',
-                    icon: 'error',
-                    confirmButtonText: 'Cool'
-                })
-            }
+        // if(ok==0){
+        //         Swal.fire({
+        //             title: 'Parola sau email invalid',
+        //             text: 'Daca nu aveti un cont, inregistrati-va!',
+        //             icon: 'error',
+        //             confirmButtonText: 'Cool'
+        //         })
+        //     }
 });
 
 async function findUser(url = '') {
@@ -60,3 +61,4 @@ async function findUser(url = '') {
     document.body.style.backgroundColor="black";
     document.body.style.color="white";
 }
+
